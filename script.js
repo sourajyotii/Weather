@@ -39,10 +39,7 @@ function otherWeather(n, city) {
 		.then((response) => {
 			window["temp"+n].innerHTML = response.temp;
 			window["cloud_pct"+n].innerHTML = response.cloud_pct;
-			window["feels_like"+n].innerHTML = response.feels_like;
 			window["humidity"+n].innerHTML = response.humidity;
-			window["max_temp"+n].innerHTML = response.max_temp;
-			window["min_temp"+n].innerHTML = response.min_temp;
 			window["wind_speed"+n].innerHTML = response.wind_speed;
 		})
 		.catch(err => console.error(err));
